@@ -1,12 +1,10 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { ConverterComponent } from './components/converter/converter.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  standalone: true,
+  imports: [ConverterComponent], 
+  template: `<app-converter />`, 
 })
-export class AppComponent {
-  title = 'converter';
-}
+export class AppComponent {}
